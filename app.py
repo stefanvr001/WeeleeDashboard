@@ -1,10 +1,16 @@
 import subprocess
 import sys
+import os
 
 def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
+install('streamlit')
+install('pandas')
+install('numpy')
+install('datetime')
 install('matplotlib')
+install('seaborn')
 
 import streamlit as st
 import pandas as pd
@@ -12,7 +18,6 @@ import numpy as np
 from datetime import datetime, timedelta
 import matplotlib.pyplot as plt
 import seaborn as sns
-import os
 # np.set_printoptions(suppress=True) # Use the full page instead of a narrow central column 
 # st.set_page_config(layout="wide") 
 
