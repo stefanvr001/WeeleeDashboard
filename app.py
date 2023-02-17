@@ -49,7 +49,7 @@ def load_data(path):
 
 
 path=os.getcwd()
-path2=path+'\\Output\\scraped_car_unique.csv'
+path2=path+'/Output/scraped_car_unique.csv'
 # os.chdir(path2)
 
 raw=load_data(path2)
